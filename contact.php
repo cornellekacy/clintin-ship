@@ -21,7 +21,7 @@
 						<div class="adress-details wow fadeInLeft" data-wow-delay="0.3s">
 							<div>
 								<span><i class="fa fa-location-arrow"></i></span>
-								<div><strong>UPSC Ship Center,</strong><br> 2000 N San Fernando Rd, Los Angeles, CA 90065, United States</div>
+								<div><strong>ROYAL LOGISTICS Ship Center,</strong><br> 4083 37th St N, Fargo, ND 58102, US</div>
 							</div>
 							
 							<div>
@@ -35,7 +35,7 @@
 						<div class="adress-details wow fadeInLeft" data-wow-delay="0.3s">
 							<div>
 								<span><i class="fa fa-location-arrow"></i></span>
-								<div><strong>UPSC Ship Center,</strong><br> 2000 N San Fernando Rd, Los Angeles, CA 90065, United States</div>
+								<div><strong>ROYAL LOGISTICS Ship Center,</strong><br> 4083 37th St N, Fargo, ND 58102, US</div>
 							</div>
 							<div>
 								<span><i class="fa fa-envelope"></i></span>

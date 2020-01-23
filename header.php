@@ -77,9 +77,9 @@
 						<div class="col-sm-offset-1 col-md-offset-1 col-lg-offset-1 col-sm-8 col-md-8 col-lg-8">
 							<div class="text-right header-padding">
 <!-- 								<div class="h-block"><span>CALL US</span>+1 (321) 837-9627</div>
- -->								<div class="h-block"><span>CALL US</span>+1 (202) 681-3519</div>
+ -->								
 								<div class="h-block"><span>EMAIL US</span>contact@royallogistics.world</div>
-								<div class="h-block"><span>ADDRESS</span>Mon - Sat  8.00 - 19.00</div>
+								<div class="h-block"><span>ADDRESS</span>4083 37th St N, Fargo, ND 58102, US</div>
 								<a class="btn btn-success" href="qoute.php">GET A FREE QUOTE</a>
 							</div>
 						</div>
