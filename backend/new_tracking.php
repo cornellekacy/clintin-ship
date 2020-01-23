@@ -60,6 +60,7 @@ if(isset($_POST['save'])){
  $weight = mysqli_real_escape_string($link,$_POST['weight']);
  $items = mysqli_real_escape_string($link,$_POST['items']);
  $descrip = mysqli_real_escape_string($link,$_POST['descrip']);
+  $track = mysqli_real_escape_string($link,$_POST['track']);
    $lon = mysqli_real_escape_string($link,$_POST['lon']);
  $lat = mysqli_real_escape_string($link,$_POST['lat']);
 
@@ -105,7 +106,7 @@ else{
     $me1 = rand();
 // Attempt insert query execution
     $sql = "INSERT INTO track (jname,jadd,jcountry,jemail,jnumber,sname,sadd,scountry,semail,snumber, prod, mode, ship_date, ddate,ship_time, dtime, currentl, pickupl, status,deliverys,cat,weight,items,packagenum,descrip,ship_id,lon,lat) 
-    VALUES ('$jname','$jadd','$jcountry','$jemail','$jnumber','$sname','$sadd','$scountry','$semail','$snumber', '$prod', '$mode', '$ship_date', '$ddate','$ship_time', '$dtime', '$currentl', '$pickupl', '$status','$deliverys','$cat','$weight','$items','$me1','$descrip','U-$me','$lon','$lat')";
+    VALUES ('$jname','$jadd','$jcountry','$jemail','$jnumber','$sname','$sadd','$scountry','$semail','$snumber', '$prod', '$mode', '$ship_date', '$ddate','$ship_time', '$dtime', '$currentl', '$pickupl', '$status','$deliverys','$cat','$weight','$items','$me1','$descrip','$track','$lon','$lat')";
     if(mysqli_query($link, $sql)){
         echo "<div class='alert alert-success'>
         <strong>Success!</strong> Tracking Successfully Created.
@@ -124,52 +125,61 @@ mysqli_close($link);
                         <div class="card-body">
                             <div class="basic-form">
                                 <form method="post">
+                                    <hr>
+                                    <h2>JK Information</h2>
+                                    <hr>
                                  <div class="form-group">
-                                    <label>Jk Name</label>
-                                    <input type="text" name="jname" class="form-control" placeholder="jk's name">
+                                    <label><b>Jk Name</b></label>
+                                    <input type="text" name="jname" class="form-control">
                                 </div>
                                 <div class="form-group">
-                                    <label>Jk address</label>
-                                    <input type="text" name="jadd" class="form-control" placeholder="jk's address">
+                                    <label><b>Jk address</b></label>
+                                    <input type="text" name="jadd" class="form-control">
                                 </div>
                                 <div class="form-group">
-                                    <label>Jk Country</label>
-                                    <input type="text" name="jcountry" class="form-control" placeholder="jk's country">
+                                    <label><b>Jk Country</b></label>
+                                    <input type="text" name="jcountry" class="form-control" >
                                 </div>
                                 <div class="form-group">
-                                    <label>Jk Email</label>
-                                    <input type="text" name="jemail" class="form-control" placeholder="jk's Email">
+                                    <label><b>Jk Email</b></label>
+                                    <input type="text" name="jemail" class="form-control" >
                                 </div>
                                 <div class="form-group">
-                                    <label>Jk Number</label>
-                                    <input type="text" name="jnumber" class="form-control" placeholder="jk's number">
+                                    <label><b>Jk Number</b></label>
+                                    <input type="text" name="jnumber" class="form-control" >
+                                </div>
+                                <hr>
+                                <h2>Seller Information</h2>
+                                <hr>
+                                <div class="form-group">
+                                    <label><b>Seller Name</b></label>
+                                    <input type="text" name="sname" class="form-control">
                                 </div>
                                 <div class="form-group">
-                                    <label>Seller Name</label>
-                                    <input type="text" name="sname" class="form-control" placeholder="seller's name">
+                                    <label><b>Seller address</b></label>
+                                    <input type="text" name="sadd" class="form-control">
                                 </div>
                                 <div class="form-group">
-                                    <label>Seller address</label>
-                                    <input type="text" name="sadd" class="form-control" placeholder="seller's address">
+                                    <label><b>Seller Country</b></label>
+                                    <input type="text" name="scountry" class="form-control">
                                 </div>
                                 <div class="form-group">
-                                    <label>Seller Country</label>
-                                    <input type="text" name="scountry" class="form-control" placeholder="seller's country">
+                                    <label><b>Seller Email</b></label>
+                                    <input type="text" name="semail" class="form-control" >
                                 </div>
                                 <div class="form-group">
-                                    <label>Seller Email</label>
-                                    <input type="text" name="semail" class="form-control" placeholder="seller's email">
+                                    <label><b>Seller Number</b></label>
+                                    <input type="text" name="snumber" class="form-control">
+                                </div>
+                                <hr>
+                                <h2>Product Details</h2>
+                                <hr>
+                                <div class="form-group">
+                                    <label><b>Product Name</b></label>
+                                    <input type="text" name="prod" class="form-control">
                                 </div>
                                 <div class="form-group">
-                                    <label>Seller Number</label>
-                                    <input type="text" name="snumber" class="form-control" placeholder="seller's number">
-                                </div>
-                                <div class="form-group">
-                                    <label>Product Name</label>
-                                    <input type="text" name="prod" class="form-control" placeholder="Product Name">
-                                </div>
-                                <div class="form-group">
-                                    <label >Transportation Mode</label>
+                                    <label ><b>Transportation Mode</b></label>
 
                                     <select class="form-control" name="mode">
                                         <option value="Air">Air</option>
@@ -180,31 +190,31 @@ mysqli_close($link);
 
                                 </div>
                                 <div class="form-group">
-                                    <label>Shipped Date</label>
-                                    <input type="date" name="ship_date" class="form-control" placeholder="Password">
+                                    <label><b>Shipped Date</b></label>
+                                    <input type="date" name="ship_date" class="form-control">
                                 </div>
                                 <div class="form-group">
-                                    <label>Delivery Date</label>
-                                    <input type="date" class="form-control" name="ddate" placeholder="Password">
+                                    <label><b>Delivery Date</b></label>
+                                    <input type="date" class="form-control" name="ddate">
                                 </div>
                                 <div class="form-group">
-                                    <label>Shipped Time</label>
-                                    <input type="time" name="ship_time" class="form-control" placeholder="Shipped Time">
+                                    <label><b>Shipped Time</b></label>
+                                    <input type="time" name="ship_time" class="form-control">
                                 </div>
                                 <div class="form-group">
-                                    <label>Delivery Time</label>
-                                    <input type="time" class="form-control" name="dtime" placeholder="Delivery Time">
+                                    <label><b>Delivery Time</b></label>
+                                    <input type="time" class="form-control" name="dtime">
                                 </div>
                                 <div class="form-group">
-                                    <label>Current Location</label>
-                                    <input type="text" class="form-control" name="currentl" placeholder="current location">
+                                    <label><b>Current Location</b></label>
+                                    <input type="text" class="form-control" name="currentl">
                                 </div>
                                 <div class="form-group">
-                                    <label>Pickup Location</label>
-                                    <input type="text" class="form-control" name="pickupl" placeholder="pickup location">
+                                    <label><b>Pickup Location</b></label>
+                                    <input type="text" class="form-control" name="pickupl">
                                 </div>
                                 <div class="form-group">
-                                    <label>Shipment Status</label>
+                                    <label><b>Shipment Status</b></label>
 
                                     <select class="form-control" name="status">
                                         <option value="In Progress">In Progress</option>
@@ -216,19 +226,19 @@ mysqli_close($link);
 
                                 </div>
                                 <div class="form-group">
-                                    <label>Delivery Status</label>
-                                    <input type="text" class="form-control" name="deliverys" placeholder="delivery Status">
+                                    <label><b>Delivery Status</b></label>
+                                    <input type="text" class="form-control" name="deliverys">
                                 </div>
                                 <div class="form-group">
-                                    <label>Shipment Category</label>
+                                    <label><b>Shipment Category</b></label>
                                     <input type="text" class="form-control" name="cat" placeholder="E.g pet">
                                 </div>
                                 <div class="form-group">
-                                    <label>Shipment Weight</label>
+                                    <label><b>Shipment Weight</b></label>
                                     <input type="text" class="form-control" name="weight" placeholder="e.g 10kg">
                                 </div>
                                 <div class="form-group">
-                                    <label>Number Of Item To Ship</label>
+                                    <label><b>Number Of Item To Ship</b></label>
                                     <input type="text" class="form-control" name="items" placeholder="e.g 01">
                                 </div>
                                 <div class="form-group">
@@ -236,12 +246,19 @@ mysqli_close($link);
                                     <textarea class="textarea_editor form-control" name="descrip" rows="15" placeholder="Enter text ..." style="height:150px"></textarea>
 
                                 </div>
+                                <div class="form-group">
+                                    <label><b>Tracking Number</b></label>
+                                    <input type="text" class="form-control" name="track" placeholder="">
+                                </div>
+                                <hr>
+                                <h2>Map Details</h2>
+                                <hr>
                              <div class="form-group">
-                                    <label>From ..</label>
+                                    <label><b>From ..</b></label>
                                     <input type="text" class="form-control" name="lon" placeholder="e.g Mexico">
                                 </div>
                                    <div class="form-group">
-                                    <label>To ..</label>
+                                    <label><b>To ..</b></label>
                                     <input type="text" class="form-control" name="lat" placeholder="e.g New York">
                                 </div>
                                 <div class="checkbox">

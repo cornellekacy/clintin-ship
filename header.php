@@ -18,7 +18,7 @@
 		<link rel="alternate stylesheet" type="text/css" href="assets/switcher/css/color4.css" title="color4" media="all" />
 		<link rel="alternate stylesheet" type="text/css" href="assets/switcher/css/color5.css" title="color5" media="all" />
 		<link rel="alternate stylesheet" type="text/css" href="assets/switcher/css/color6.css" title="color6" media="all" />
-		<link rel="icon" type="image/png" sizes="16x16" href="img/fav.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="img/fav1.png">
 		<meta name="yandex-verification" content="dc63e8d972e4e70b" />
 		<style type="text/css">
 			.blink_me {
@@ -72,14 +72,14 @@
 					</div>
 					<div class="row header">
 						<div class="col-sm-3 col-md-3 col-lg-3">
-							<a href="index.php"><img src="img/log2.png"></a>
+							<a href="index.php"><img src="img/log11.png"></a>
 						</div>
 						<div class="col-sm-offset-1 col-md-offset-1 col-lg-offset-1 col-sm-8 col-md-8 col-lg-8">
 							<div class="text-right header-padding">
 <!-- 								<div class="h-block"><span>CALL US</span>+1 (321) 837-9627</div>
  -->								<div class="h-block"><span>CALL US</span>+1 (202) 681-3519</div>
-								<div class="h-block"><span>EMAIL US</span>contact@upsc-usa.net</div>
-								<div class="h-block"><span>WORKING HOURS</span>Mon - Sat  8.00 - 19.00</div>
+								<div class="h-block"><span>EMAIL US</span>contact@royallogistics.world</div>
+								<div class="h-block"><span>ADDRESS</span>Mon - Sat  8.00 - 19.00</div>
 								<a class="btn btn-success" href="qoute.php">GET A FREE QUOTE</a>
 							</div>
 						</div>

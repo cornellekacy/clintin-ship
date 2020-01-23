@@ -70,9 +70,9 @@ $mail->Password = "cornellekacy456";
                       <h3>Tracking No :  $jkt    </h3>  
                     <img src=\"cid:logoimg\" />
                     <br><br>
-                     <a href='www.upsc-usa.com/track.php'><button>Track Package Here</button></a>
+                     <a href='www.royallogistics.world/track.php'><button>Track Package Here</button></a>
                     <br><br><br><br>
-                    <P style='font-size: 11px;'>This invoice  is processed by UPSC USA Transports and logistics, Inc. If you need more information, please contact us at contact@upsc-usa.com</P>
+                    <P style='font-size: 11px;'>This invoice  is processed by ROYAL LOGISTICS Transports and logistics, Inc. If you need more information, please contact us at contact@royallogistics.WORLD</P>
 <P style='font-size: 11px;'>By using our  services, you agree to upsc-usa.com  Privacy Notice and Conditions of Use.</P>
 <P style='font-size: 11px;'>This email was sent from a notification-only address that cannot accept incoming email. Please do not reply to this message</P>
                         ";

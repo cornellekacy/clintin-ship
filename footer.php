@@ -42,12 +42,12 @@
 							<div class="contact-info">
 								<span><i class="fa fa-location-arrow"></i><strong>UPSC Ship Center,</strong><br> 2000 N San Fernando Rd, Los Angeles, CA 90065, United States 33102 </span>
 								<span><i class="fa fa-phone"></i>+1 (202) 681-3519</span>
-								<span><i class="fa fa-envelope"></i>contact@fedex-usa.net</span>
+								<span><i class="fa fa-envelope"></i>contact@royallogistics.world</span>
 							
 							</div>
 						</div>
 					</div>
-					<div class="copy text-right"><a id="to-top" href="#this-is-top"><i class="fa fa-chevron-up"></i></a><a href="#"></a> &copy; 2015 UPSC-USA All rights reserved.</div>
+					<div class="copy text-right"><a id="to-top" href="#this-is-top"><i class="fa fa-chevron-up"></i></a><a href="#"></a> &copy; 2015 ROYAL LOGISTICS All rights reserved.</div>
 				</div>
 			</footer>
 		</div>

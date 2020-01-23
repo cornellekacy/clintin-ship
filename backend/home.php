@@ -62,9 +62,9 @@
                                                         <i class="glyphicon glyphicon-pencil icon-white"></i>
                                                         Edit
                                                     </a>
-                                                    <a class="btn btn-primary" href="view_full.php?id=<?php echo $row["track_id"]; ?>">
+                                                    <a class="btn btn-primary" href="shipment.php?id=<?php echo $row["track_id"]; ?>">
                                                         <i class="glyphicon glyphicon-pencil icon-white"></i>
-                                                        View
+                                                        Add Location
                                                     </a>
                                                 </td>
                                             </tr>

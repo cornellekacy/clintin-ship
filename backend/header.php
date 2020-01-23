@@ -14,7 +14,7 @@ session_start();
     <meta name="description" content="">
     <meta name="author" content="">
     <!-- Favicon icon -->
-        <link rel="icon" type="image/png" sizes="16x16" href="../img/fav.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="../img/fav1.png">
     <title>UPSC USA - Admin Panel - Home</title>
     <!-- Bootstrap Core CSS -->
     <link href="css/lib/bootstrap/bootstrap.min.css" rel="stylesheet">

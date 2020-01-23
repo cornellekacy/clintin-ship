@@ -26,8 +26,9 @@
 
                 </li>
                  <li> <a  href="editmap.php" aria-expanded="false"><i class="fa fa-eye"></i>Edit Map</a>
+                  <!--   <li> <a  href="shipment.php" aria-expanded="false"><i class="fa fa-eye"></i>Package Locations</a>
 
-                </li>
+                </li> -->
             </ul>
         </nav>
         <!-- End Sidebar navigation -->
