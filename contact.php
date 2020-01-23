@@ -23,13 +23,10 @@
 								<span><i class="fa fa-location-arrow"></i></span>
 								<div><strong>UPSC Ship Center,</strong><br> 2000 N San Fernando Rd, Los Angeles, CA 90065, United States</div>
 							</div>
-							<div>
-								<span><i class="fa fa-phone"></i></span>
-								<div>+1 (202) 681-3519</div>
-							</div>
+							
 							<div>
 								<span><i class="fa fa-envelope"></i></span>
-								<div>contact@upsc-usa.com</div>
+								<div>contact@royallogistics.com</div>
 							</div>
 						
 						</div>
@@ -41,12 +38,8 @@
 								<div><strong>UPSC Ship Center,</strong><br> 2000 N San Fernando Rd, Los Angeles, CA 90065, United States</div>
 							</div>
 							<div>
-								<span><i class="fa fa-phone"></i></span>
-								<div>+1 (202) 681-3519</div>
-							</div>
-							<div>
 								<span><i class="fa fa-envelope"></i></span>
-								<div>contact@upsc-usa.com</div>
+								<div>contact@royallogistics.com</div>
 							</div>
 						
 						</div>
@@ -88,7 +81,7 @@ $mail->Password = "cornellekacy456";
     //This will fail if the address provided is invalid,
     //in which case we should ignore the whole request
     if ($mail->addReplyTo($_POST['email'], $_POST['fname'])) {
-        $mail->Subject = 'UPSC-USA Contact';
+        $mail->Subject = 'ROYAL LOGISTICS Contact';
         //Keep it simple - don't use HTML
         $mail->isHTML(false);
         //Build a simple message body

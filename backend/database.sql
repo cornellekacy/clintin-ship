@@ -27,7 +27,6 @@ DROP TABLE IF EXISTS `track`.`track` ;
 
 CREATE TABLE IF NOT EXISTS `track`.`track` (
   `track_id` INT NOT NULL AUTO_INCREMENT,
-  `username` varchar(255) NOT NULL,
   `jname` varchar(255) NOT NULL,
   `jadd` varchar(255) NOT NULL,
   `jcountry` varchar(255) NOT NULL,
@@ -56,16 +55,16 @@ CREATE TABLE IF NOT EXISTS `track`.`track` (
   `ship_id` varchar(255) NOT NULL,
   `lon` varchar(255) NOT NULL,
   `lat` varchar(255) NOT NULL,
-  -- `l1` varchar(255) NOT NULL,
-  -- `d1` varchar(255) NOT NULL,
-  -- `l2` varchar(255) NOT NULL,
-  -- `d2` varchar(255) NOT NULL,
-  -- `l3` varchar(255) NOT NULL,
-  -- `d3` varchar(255) NOT NULL,
-  -- `l4` varchar(255) NOT NULL,
-  -- `d4` varchar(255) NOT NULL,
-  -- `l5` varchar(255) NOT NULL,
-  -- `d5` varchar(255) NOT NULL,
+  `l1` varchar(255) NOT NULL,
+  `d1` varchar(255) NOT NULL,
+  `l2` varchar(255) NOT NULL,
+  `d2` varchar(255) NOT NULL,
+  `l3` varchar(255) NOT NULL,
+  `d3` varchar(255) NOT NULL,
+  `l4` varchar(255) NOT NULL,
+  `d4` varchar(255) NOT NULL,
+  `l5` varchar(255) NOT NULL,
+  `d5` varchar(255) NOT NULL,
 
   PRIMARY KEY (`track_id`))
 ENGINE = InnoDB;
