@@ -5,7 +5,7 @@
 <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>UPSC-USA - Home</title>
+        <title>ROYAL LOGISTICS - Home</title>
         
         <link href="css/master.css" rel="stylesheet">
         <meta name="yandex-verification" content="7074ef7eb439f10d" />
