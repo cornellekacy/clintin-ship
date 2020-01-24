@@ -26,7 +26,7 @@
 							
 							<div>
 								<span><i class="fa fa-envelope"></i></span>
-								<div>contact@royallogistics.com</div>
+								<div>contact@royallogistics.world</div>
 							</div>
 						
 						</div>
@@ -39,7 +39,7 @@
 							</div>
 							<div>
 								<span><i class="fa fa-envelope"></i></span>
-								<div>contact@royallogistics.com</div>
+								<div>contact@royallogistics.world</div>
 							</div>
 						
 						</div>
