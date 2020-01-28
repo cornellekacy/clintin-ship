@@ -41,7 +41,7 @@
 							<h4>CONTACT INFO</h4>
 							<div class="contact-info">
 								<span><i class="fa fa-location-arrow"></i><strong>ROYAL LOGISTICS Ship Center,</strong><br> 4083 37th St N, Fargo, ND 58102, US</span>
-								<span><i class="fa fa-phone"></i>+1 (202) 681-3519</span>
+								<span><i class="fa fa-phone"></i></span>
 								<span><i class="fa fa-envelope"></i>contact@royallogistics.world</span>
 							
 							</div>
