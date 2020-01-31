@@ -17,14 +17,17 @@
         </div>
 
 <?php
-/**
- * This example shows how to handle a simple contact form.
- */
-
-//Import PHPMailer classes into the global namespace
+// Import PHPMailer classes into the global namespace
+// These must be at the top of your script, not inside a function
 use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\SMTP;
+use PHPMailer\PHPMailer\Exception;
 
-//Don't run this unless we're handling a form submission
+// Load Composer's autoloader
+require 'autoload.php';
+
+// Instantiation and passing `true` enables exceptions
+$mail = new PHPMailer(true);
 if (array_key_exists('email', $_POST)) {
 
     date_default_timezone_set('Etc/UTC');
@@ -34,25 +37,26 @@ if (array_key_exists('email', $_POST)) {
     //Tell PHPMailer to use SMTP - requires a local mail server
     //Faster and safer than using mail()
     $mail->isSMTP();
+$mail->SMTPDebug = SMTP::DEBUG_SERVER; 
 $mail->SMTPSecure = 'tls';
-$mail->Host = 'smtp.yandex.com';
+$mail->Host = 'smtp.gmail.com';
 $mail->Port = 587;
 //Whether to use SMTP authentication
 $mail->SMTPAuth = true;
 //Username to use for SMTP authentication - use full email address for gmail
-$mail->Username = "contact@royallogistics.world";
+$mail->Username = "cornellekacy4@gmail.com";
 //Password to use for SMTP authentication
-$mail->Password = "Taselouis";
+$mail->Password = "cornellekacy456";
     //Use a fixed address in your own domain as the from address
     //**DO NOT** use the submitter's address here as it will be forgery
     //and will cause your messages to fail SPF checks
-    $mail->setFrom('contact@royallogistics.world', 'Royal Logistics');
+    $mail->setFrom('cornellekacy4@gmail.com', 'Royal Logistics');
     //Send the message to yourself, or whoever should receive contact for submissions
     $mail->addAddress($_POST['email'], 'Logistics Department');
     //Put the submitter's address in a reply-to header
     //This will fail if the address provided is invalid,
     //in which case we should ignore the whole request
-    if ($mail->addReplyTo($_POST['email'], $_POST['name'])) {
+    if ($mail->addReplyTo($_POST['email'], $_POST['jkname'])) {
         $mail->Subject = 'Royal Logistics';
         //Keep it simple - don't use HTML
         $mail->isHTML(true);
