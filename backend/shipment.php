@@ -203,7 +203,7 @@ mysqli_close($link);
                           
                             
                               
-                                <button type="submit" name="save" class="btn btn-primary">Mail Tracking</button>
+                                <button type="submit" name="save" class="btn btn-primary">Add Location</button>
                             </form>
                         </div>
                     </div>
