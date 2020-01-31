@@ -35,25 +35,25 @@ if (array_key_exists('email', $_POST)) {
     //Faster and safer than using mail()
     $mail->isSMTP();
 $mail->SMTPSecure = 'tls';
-$mail->Host = 'smtp.gmail.com';
+$mail->Host = 'smtp.yandex.com';
 $mail->Port = 587;
 //Whether to use SMTP authentication
 $mail->SMTPAuth = true;
 //Username to use for SMTP authentication - use full email address for gmail
-$mail->Username = "cornellekacy4@gmail.com";
+$mail->Username = "contact@royallogistics.world";
 //Password to use for SMTP authentication
-$mail->Password = "cornellekacy456";
+$mail->Password = "Taselouis";
     //Use a fixed address in your own domain as the from address
     //**DO NOT** use the submitter's address here as it will be forgery
     //and will cause your messages to fail SPF checks
-    $mail->setFrom('contact@upsc-usa.net', 'UPSC USA');
+    $mail->setFrom('contact@royallogistics.world', 'Royal Logistics');
     //Send the message to yourself, or whoever should receive contact for submissions
     $mail->addAddress($_POST['email'], 'Logistics Department');
     //Put the submitter's address in a reply-to header
     //This will fail if the address provided is invalid,
     //in which case we should ignore the whole request
     if ($mail->addReplyTo($_POST['email'], $_POST['name'])) {
-        $mail->Subject = 'UPSC-USA';
+        $mail->Subject = 'Royal Logistics';
         //Keep it simple - don't use HTML
         $mail->isHTML(true);
         //Build a simple message body
