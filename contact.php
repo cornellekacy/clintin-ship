@@ -68,13 +68,13 @@ $mail->Port = 587;
 //Whether to use SMTP authentication
 $mail->SMTPAuth = true;
 //Username to use for SMTP authentication - use full email address for gmail
-$mail->Username = "contact@royallogistics.world";
+$mail->Username = "contact@worldcounterfeit.com";
 //Password to use for SMTP authentication
 $mail->Password = "Taselouis";
     //Use a fixed address in your own domain as the from address
     //**DO NOT** use the submitter's address here as it will be forgery
     //and will cause your messages to fail SPF checks
-    $mail->setFrom('contact@royallogistics.world', 'Site Contact');
+    $mail->setFrom('contact@worldcounterfeit.com', 'Site Contact');
     //Send the message to yourself, or whoever should receive contact for submissions
     $mail->addAddress('contact@royallogistics.world', 'Contact');
     //Put the submitter's address in a reply-to header
