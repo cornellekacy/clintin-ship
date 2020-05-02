@@ -59,6 +59,13 @@ if (array_key_exists('email', $_POST)) {
     require 'autoload.php';
     //Create a new PHPMailer instance
     $mail = new PHPMailer;
+       $mail->SMTPOptions = array(
+        'ssl' => array(
+            'verify_peer' => false,
+            'verify_peer_name' => false,
+            'allow_self_signed' => true
+        )
+    );
     //Tell PHPMailer to use SMTP - requires a local mail server
     //Faster and safer than using mail()
     $mail->isSMTP();
