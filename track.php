@@ -310,11 +310,10 @@
 </table>
 </div><br>
 </div>
-<div class="row">
-  <div class="col-md-2">
-    
-  </div>
-    <div class="col-md-8">
+<div class="container">
+  <div class="row">
+
+    <div class="col-md-12">
         <h3 align="center">PACKAGE LOCATION AND STOPS</h3><br>
     <div class="table-responsive">
         <table class="table table-clean-paddings margin-bottom-0" style="background-color: #7c7c7c">
@@ -357,6 +356,49 @@
                        <div class="contact-container"><a href="#" style="color: #fff; text-transform: uppercase;"><b><?php echo $row["l5"] ?></b></a> </div>
                    </td> 
                    <td style="color: #fff; text-transform: uppercase;"><?php echo $row["d5"] ?></td>
+                   <td style="color: #fff; text-transform: uppercase;"><?php echo $row["dc5"] ?></td>
+
+               </tr>
+
+
+                       <tr>
+                    <td>
+                       <div class="contact-container"><a href="#" style="color: #fff; text-transform: uppercase;"><b><?php echo $row["l6"] ?></b></a> </div>
+                   </td> 
+                   <td style="color: #fff; text-transform: uppercase;"><?php echo $row["d6"] ?></td>
+                   <td style="color: #fff; text-transform: uppercase;"><?php echo $row["dc6"] ?></td>
+
+               </tr>
+                      <tr>
+                    <td>
+                       <div class="contact-container"><a href="#" style="color: #fff; text-transform: uppercase;"><b><?php echo $row["l7"] ?></b></a> </div>
+                   </td> 
+                   <td style="color: #fff; text-transform: uppercase;"><?php echo $row["d7"] ?></td>
+                        <td style="color: #fff; text-transform: uppercase;"><?php echo $row["dc7"] ?></td>
+
+               </tr>
+                      <tr>
+                    <td>
+                       <div class="contact-container"><a href="#" style="color: #fff; text-transform: uppercase;"><b><?php echo $row["l8"] ?></b></a> </div>
+                   </td> 
+                   <td style="color: #fff; text-transform: uppercase;"><?php echo $row["d8"] ?></td>
+                        <td style="color: #fff; text-transform: uppercase;"><?php echo $row["dc8"] ?></td>
+
+               </tr>
+                      <tr>
+                    <td>
+                       <div class="contact-container"><a href="#" style="color: #fff; text-transform: uppercase;"><b><?php echo $row["l9"] ?></b></a> </div>
+                   </td> 
+                   <td style="color: #fff; text-transform: uppercase;"><?php echo $row["d9"] ?></td>
+                        <td style="color: #fff; text-transform: uppercase;"><?php echo $row["dc9"] ?></td>
+
+               </tr>
+                      <tr>
+                    <td>
+                       <div class="contact-container"><a href="#" style="color: #fff; text-transform: uppercase;"><b><?php echo $row["l10"] ?></b></a> </div>
+                   </td> 
+                   <td style="color: #fff; text-transform: uppercase;"><?php echo $row["d10"] ?></td>
+                   <td style="color: #fff; text-transform: uppercase;"><?php echo $row["dc10"] ?></td>
 
                </tr>
             
@@ -366,9 +408,7 @@
 </table>
 </div>
   </div>
-    <div class="col-md-2">
-    
-  </div>
+</div>
 </div>
 <br><br>
 <h1 align="center"><a href="map.php?id=<?php echo $row["track_id"]; ?>">View Map Here</a></h1>
